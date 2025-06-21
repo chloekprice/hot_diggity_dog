@@ -39,30 +39,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     func detectHotDog(image: CIImage) {
         
-        guard let model = try? VNCoreMLModel(for: Inceptionv3(configuration: MLModelConfiguration()).model) else {
-            fatalError("issue with classification model")
-        }
-        
-        let request = VNCoreMLRequest(model: model) { (request, error) in
-            guard let results = request.results as? [VNClassificationObservation] else {
-                fatalError("could not trigger request")
+        if #available(iOS 17.0, *) {
+            guard let model = try? VNCoreMLModel(for: FastViTMA36F16(configuration: MLModelConfiguration()).model) else {
+                fatalError("issue with classification model")
             }
-            if let firstResult = results.first {
-                if firstResult.identifier.contains("hotdog") {
-                    self.navigationItem.title = "HOT DIGGITY DOG"
-                } else {
-                    self.navigationItem.title = "HOT DIGGITY NAH"
+            
+            let request = VNCoreMLRequest(model: model) { (request, error) in
+                guard let results = request.results as? [VNClassificationObservation] else {
+                    fatalError("could not trigger request")
+                }
+                if let firstResult = results.first {
+                    if firstResult.identifier.contains("hotdog") {
+                        self.navigationItem.title = "HOT DIGGITY DOG"
+                    } else {
+                        self.navigationItem.title = "HOT DIGGITY NAH"
+                    }
                 }
             }
+            
+            let handler = VNImageRequestHandler(ciImage: image)
+            do {
+                try handler.perform([request])
+            } catch {
+                print(error.localizedDescription)
+            }
+        } else {
+            self.navigationItem.title = "SORRY, PLEASE UPGRADE TO iOS 17 TO USE THIS FEATURE"
         }
-        
-        let handler = VNImageRequestHandler(ciImage: image)
-        do {
-            try handler.perform([request])
-        } catch {
-            print(error.localizedDescription)
-        }
-        
     }
     
 }

@@ -3,30 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
-
-/* Begin PBXBuildFile section */
-		11D468472C0A4B5400DFB8FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D468462C0A4B5400DFB8FD /* AppDelegate.swift */; };
-		11D468492C0A4B5400DFB8FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D468482C0A4B5400DFB8FD /* SceneDelegate.swift */; };
-		11D4684B2C0A4B5400DFB8FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D4684A2C0A4B5400DFB8FD /* ViewController.swift */; };
-		11D4684E2C0A4B5400DFB8FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D4684C2C0A4B5400DFB8FD /* Main.storyboard */; };
-		11D468502C0A4B5700DFB8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D4684F2C0A4B5700DFB8FD /* Assets.xcassets */; };
-		11D468532C0A4B5700DFB8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D468512C0A4B5700DFB8FD /* LaunchScreen.storyboard */; };
-		11D4685F2C0A589F00DFB8FD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11D4685E2C0A589F00DFB8FD /* Inceptionv3.mlmodel */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11D468432C0A4B5400DFB8FD /* Hot-Diggity-Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot-Diggity-Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11D468462C0A4B5400DFB8FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11D468482C0A4B5400DFB8FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11D4684A2C0A4B5400DFB8FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11D4684D2C0A4B5400DFB8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11D4684F2C0A4B5700DFB8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11D468522C0A4B5700DFB8FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		11D468542C0A4B5700DFB8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11D4685E2C0A589F00DFB8FD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		083671082E070F540008B6EC /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 11D468422C0A4B5400DFB8FD /* Hot-Diggity-Dog */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		083670FF2E070F540008B6EC /* Hot-Diggity-Dog */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (083671082E070F540008B6EC /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Hot-Diggity-Dog"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11D468402C0A4B5400DFB8FD /* Frameworks */ = {
@@ -42,7 +38,7 @@
 		11D4683A2C0A4B5400DFB8FD = {
 			isa = PBXGroup;
 			children = (
-				11D468452C0A4B5400DFB8FD /* Hot-Diggity-Dog */,
+				083670FF2E070F540008B6EC /* Hot-Diggity-Dog */,
 				11D468442C0A4B5400DFB8FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,21 +49,6 @@
 				11D468432C0A4B5400DFB8FD /* Hot-Diggity-Dog.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		11D468452C0A4B5400DFB8FD /* Hot-Diggity-Dog */ = {
-			isa = PBXGroup;
-			children = (
-				11D468462C0A4B5400DFB8FD /* AppDelegate.swift */,
-				11D468482C0A4B5400DFB8FD /* SceneDelegate.swift */,
-				11D4684A2C0A4B5400DFB8FD /* ViewController.swift */,
-				11D4684C2C0A4B5400DFB8FD /* Main.storyboard */,
-				11D4684F2C0A4B5700DFB8FD /* Assets.xcassets */,
-				11D468512C0A4B5700DFB8FD /* LaunchScreen.storyboard */,
-				11D468542C0A4B5700DFB8FD /* Info.plist */,
-				11D4685E2C0A589F00DFB8FD /* Inceptionv3.mlmodel */,
-			);
-			path = "Hot-Diggity-Dog";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +65,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				083670FF2E070F540008B6EC /* Hot-Diggity-Dog */,
 			);
 			name = "Hot-Diggity-Dog";
 			productName = "Hot-Diggity-Dog";
@@ -128,9 +112,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D468532C0A4B5700DFB8FD /* LaunchScreen.storyboard in Resources */,
-				11D468502C0A4B5700DFB8FD /* Assets.xcassets in Resources */,
-				11D4684E2C0A4B5400DFB8FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +122,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D4684B2C0A4B5400DFB8FD /* ViewController.swift in Sources */,
-				11D4685F2C0A589F00DFB8FD /* Inceptionv3.mlmodel in Sources */,
-				11D468472C0A4B5400DFB8FD /* AppDelegate.swift in Sources */,
-				11D468492C0A4B5400DFB8FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		11D4684C2C0A4B5400DFB8FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11D4684D2C0A4B5400DFB8FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		11D468512C0A4B5700DFB8FD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11D468522C0A4B5700DFB8FD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		11D468552C0A4B5700DFB8FD /* Debug */ = {

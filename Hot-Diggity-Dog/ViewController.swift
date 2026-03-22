@@ -20,6 +20,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         imagePicker.sourceType  = .photoLibrary
         imagePicker.allowsEditing = false
         
+        displayImage.image = UIImage(named: "instructions")
+        
     }
 
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
@@ -69,6 +71,3 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
 }
-    
-
-
